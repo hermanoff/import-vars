@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# set "secret" environment variables coming from vault injection
+# set environment variables coming from "vars" directory
+
 VARS_DIR="vars"
 if [ -d "${VARS_DIR}" ]; then
   for FILE in "${VARS_DIR}"/*; do
